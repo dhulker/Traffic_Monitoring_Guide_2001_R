@@ -19,7 +19,7 @@ The documentation of the fields below are mostly a reprint of the above document
 ## TRAFFIC VOLUME DATA FORMATS
 
 | Field | Columns | Length | Description |
-| --- | --- | --- | :--- |
+| ---: | ---: | ---: | :--- |
 | 1 | 1 | 1 | Record Type |
 | 2 | 2-3 | 2 | FIPS State Code |
 | 3 | 4-5 | 2 | Functional Classification |
