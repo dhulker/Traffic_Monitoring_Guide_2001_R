@@ -16,8 +16,53 @@ The 2001 Traffic Monitoring Guide can be found here:
 
 The documentation of the fields below are mostly a reprint of the above document.
 
-## TRAFFIC VOLUME DATA FORMATS
+## To use this script
 
+- After cloning the repo locally, create the following subdirectories<br>
+  - input
+    - volume
+    - class
+  - output
+
+- Then place the appropriate files of each type in the input folder.
+
+- Run the script.
+
+- The files will be placed in the output directory.  Each type of output will be combined into one file.
+
+## TRAFFIC CLASS DATA FORMATS
+
+| Field | Columns | Length | Description |
+| ---: | ---: | ---: | :--- |
+| 1 | 1 | 1 | Record Type |
+| 2 | 2-3 | 2 | FIPS State Code |
+| 3 | 4-9 | 6 | Station ID |
+| 4 | 10 | 1 | Direction of Travel Code |
+| 5 | 11 | 1 | Lane of Travel |
+| 6 | 12-13 | 2 | Year of Data |
+| 7 | 14-15 | 2 | Month of Data |
+| 8 | 16-17 | 2 | Day of Data |
+| 9 | 18-19 | 2 | Hour of Data |
+| 10 | 20-24 | 5 | Total Volume |
+| 11 | 25-29 | 5 | Class 1 Count |
+| 12 | 30-34 | 5 | Class 2 Count |
+| 13 | 35-39 | 5 | Class 3 Count |
+| 14 | 40-44 | 5 | Class 4 Count |
+| 15 | 45-49 | 5 | Class 5 Count |
+| 16 | 50-54 | 5 | Class 6 Count |
+| 17 | 55-59 | 5 | Class 7 Count |
+| 18 | 60-64 | 5 | Class 8 Count |
+| 19 | 65-69 | 5 | Class 9 Count |
+| 20 | 70-74 | 5 | Class 10 Count |
+| 21 | 75-79 | 5 | Class 11 Count |
+| 22 | 80-84 | 5 | Class 12 Count |
+| 23 | 85-89 | 5 | Class 13 Count |
+| 24 | 90-94 | 5 | Class 14 Count (optional) |
+| 25 | 95-99 | 5 | Class 15 Count (optional) |
+
+
+
+## TRAFFIC VOLUME DATA FORMATS
 | Field | Columns | Length | Description |
 | ---: | ---: | ---: | :--- |
 | 1 | 1 | 1 | Record Type |
